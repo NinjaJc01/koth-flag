@@ -1,0 +1,13 @@
+[Unit]
+Description=THM KOTH service
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/root
+ExecStart=/root/koth
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
