@@ -15,7 +15,7 @@ func returnKing(w http.ResponseWriter, r *http.Request) {
     w.Write(readKing())
 }
 func readKing() []byte{
-	buff, err := ioutil.ReadFile("king.txt")
+	buff, err := ioutil.ReadFile("/root/king.txt")
 	if err != nil {
 		fmt.Println(err.Error())
 	}
